@@ -1,0 +1,32 @@
+PROJECT 2
+Sales & Marketing Dashboard
+
+Overview
+-----------
+This project is an interactive Sales & Marketing Dashboard built using Power BI. It provides comprehensive insights into sales performance,
+customer demographics, and marketing campaign effectiveness. Designed to help sales and marketing teams make data-driven decisions through dynamic visualizations and KPIs.
+
+Key Features
+------------
+    KPI Cards – for Total Sales, Total Profit, Avg Discount, Total Leads, and Conversion Rate
+    Line Chart – Sales and Profit over Time
+    Bar Chart – Top 5 Selling Products
+    Map/Bar Chart – Sales by Region
+    Funnel Chart – Marketing Funnel (Leads to Conversions)
+
+Tools & Technologies
+-----------------------
+
+    Power BI Desktop
+    DAX (Data Analysis Expressions)
+    CSV Datasets
+   .pbit Template File
+
+DAX MEASURES
+-------------
+Total Sales = SUM(Sales_Data[Sales])
+Total Profit = SUM(Sales_Data[Profit])
+Average Discount = AVERAGE(Sales_Data[Discount])
+Total Leads = SUM(Campaign_Data[Leads])
+Conversion Rate = 
+    DIVIDE(SUM(Campaign_Data[Conversions]), SUM(Campaign_Data[Leads]))
